@@ -4,7 +4,7 @@ import replicate
 import json
 import time
 import requests
-
+#
 os.environ["REPLICATE_API_TOKEN"] = "r8_WM1KFdiQb73xEdAv0wot7oWAuuDUo3K328v3J"
 m = replicate.models.get("tstramer/midjourney-diffusion")
 version = m.versions.get("436b051ebd8f68d23e83d22de5e198e0995357afef113768c20f0b6fcef23c8b")
