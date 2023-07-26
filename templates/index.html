@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Second Cloud Application: ImageGPT by Midjourney</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        p.result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>My Second Cloud Application: ImageGPT by Midjourney</h1>
+    <form action="/" method="post">
+        <p>Please describe your picture:</p>
+        <p><input type="text" name="question"></p>
+        <p><input type="submit" value="Enter"></p>
+    </form>
+    <p class="result">reply: {{result}}</p>
+    <p><img src="{{result}}"></p>
+</body>
+</html>
